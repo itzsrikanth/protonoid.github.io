@@ -1,12 +1,12 @@
 module.exports = {
-    webpack: config => {
-        config.module.rules.push({
-            test: /\.md$/,
-            loader: 'frontmatter-markdown-loader'
-        });
-        return config;
-    },
-    exportPathMap: () => {
-        
-    }
+  exportPathMap: async () => {
+    const fileList = await require('./walk.js');
+    return fileList.reduce((acc, file) => {
+      acc[`/blogs/articles${file.location}`] = {
+        page: '/articles',
+        query: file.query
+      };
+      return acc;
+    }, {});
+  }
 };
