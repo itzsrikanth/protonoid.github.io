@@ -1,6 +1,7 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { withRouter } from 'next/router';
+
+import '../global.scss';
 
 class Article extends React.Component {
     static async getInitialProps(req) {
