@@ -2,7 +2,7 @@
   "name": "with-markdown",
   "version": "1.0.0",
   "scripts": {
-    "static": "npx next build && npx next export && rm -rf public && mv out public",
+    "static": "./static_build.sh",
     "local": "npx next build && npx next start",
     "server": "node server.js"
   },
