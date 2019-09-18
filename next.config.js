@@ -4,9 +4,9 @@ module.exports = withSass({
   exportPathMap: async () => {
     const fileList = await require('./walk.js');
     return fileList.reduce((acc, file) => {
-      acc[`/blogs/articles${file.location}`] = {
+      acc[`/blogs/articles${file.location.replace(/\/$/, '')}`] = {
         page: '/articles',
-        query: file.query
+        query: file.markdown
       };
       return acc;
     }, {});

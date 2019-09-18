@@ -11,12 +11,9 @@ class Article extends React.Component {
     }
 
     render() {
-        const { body } = this.props.query;
+        const { body } = this.props.router.query;
         return (
-            <div>
-                <p>Checkmate ..!</p>
-                <div dangerouslySetInnerHTML={{ __html: body }}></div>
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: body }}></div>
         );
     }
 }
