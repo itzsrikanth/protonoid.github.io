@@ -13,7 +13,7 @@ require('./walk.js').then(fileList => {
       const fileIndex = fileList.findIndex(file => file.location === req.originalUrl.replace(/\/blogs\/articles/, ''));
       if (fileIndex !== -1) {
         return app.render(req, res, '/articles', {
-          content: fileList[fileIndex].markdown
+          ...fileList[fileIndex].markdown
         });
       }
     });
