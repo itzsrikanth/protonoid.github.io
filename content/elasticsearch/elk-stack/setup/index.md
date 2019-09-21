@@ -1,5 +1,7 @@
+---
+title: ELK with filebeats
+---
 # ELK with filebeats
-
 ## Introduction
 
 ## Need for beats

@@ -1,2 +1,4 @@
-# Graphql
-
+---
+title: GraphQL
+---
+# GraphQL
