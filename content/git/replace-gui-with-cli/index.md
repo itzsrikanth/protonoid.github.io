@@ -37,5 +37,14 @@ git push -f origin remote_branch_2
 ## Commit processing
 # to get last commit hash
 git log -n 1 --format="%H"
+git log origin/master -n 1 --format="%H"
 
+# Unstage all files
+git reset HEAD -- .
+
+# Discard all changes
+git checkout -- .
+
+# Delete untracked files
+git clean -fd
 ```
