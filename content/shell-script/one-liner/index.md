@@ -1,5 +1,5 @@
 ---
-title: 
+title: Shell script one liners
 ---
 # One-liners
 

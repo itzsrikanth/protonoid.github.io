@@ -2736,5 +2736,11 @@ template {
 [hidden] {
   display: none !important; }
 
+html, body {
+  font-size: 16px; }
+
+body {
+  padding: 1rem; }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
