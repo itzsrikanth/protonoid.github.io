@@ -1,2 +1,10 @@
 @import '/node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '/node_modules/bootstrap/scss/bootstrap-reboot.scss';
+
+html, body {
+    font-size: 16px;
+}
+
+body {
+    padding: 1rem;
+}

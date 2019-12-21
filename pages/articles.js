@@ -19,7 +19,7 @@ class Article extends React.Component {
                     <title>{ attributes.title }</title>
                     <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
-                <div dangerouslySetInnerHTML={{ __html: body }}></div>
+                <div className="container" dangerouslySetInnerHTML={{ __html: body }}></div>
             </>
         );
     }
