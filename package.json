@@ -4,13 +4,13 @@
   "scripts": {
     "static": "./static_build.sh",
     "local": "npx next build && npx next start",
-    "server": "node server.js"
+    "server": "nodemon server.js"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
-    "next": "latest",
+    "next": "^9.1.6",
     "node-sass": "^4.12.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "front-matter": "^3.0.2",
-    "marked": "^0.7.0"
+    "marked": "^0.7.0",
+    "nodemon": "^2.0.2"
   }
 }

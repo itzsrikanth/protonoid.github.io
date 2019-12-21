@@ -9,16 +9,24 @@ const handle = app.getRequestHandler();
 require('./walk.js').then(fileList => {
   app.prepare().then(() => {
     const server = express();
-    server.get('/blogs/articles*', (req, res) => {
-      const fileIndex = fileList.findIndex(file => file.location === req.originalUrl.replace(/\/blogs\/articles/, ''));
+    server.get('/blogs/articles/*', (req, res) => {
+      const fileIndex = fileList.findIndex(
+        file => file.location.replace(/\/$/, '') === req.originalUrl
+          .replace(/\/blogs\/articles/, '')
+          .replace(/\/$/, '')
+      );
       if (fileIndex !== -1) {
         return app.render(req, res, '/articles', {
           ...fileList[fileIndex].markdown
         });
+      } else {
+        console.log(JSON.stringify(fileList));
+        console.log('watermelon: ' + req.originalUrl + '  ' + fileIndex);
       }
     });
   
     server.get('*', (req, res) => {
+      console.log('it was me: ' + req.url);
       return handle(req, res);
     });
   
