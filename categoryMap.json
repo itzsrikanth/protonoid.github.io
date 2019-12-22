@@ -1,0 +1,66 @@
+{
+    "/shell-script/": {
+        "title": "Shell Scripting",
+        "children": []
+    },
+    "/python/": {
+        "title": "Python",
+        "children": []
+    },
+    "/opencv/": {
+        "title": "OpenCV",
+        "children": []
+    },
+    "/kubernetes/": {
+        "title": "Kubernetes",
+        "children": []
+    },
+    "/javascript/": {
+        "title": "Javascript",
+        "children": []
+    },
+    "/graphql/": {
+        "title": "GraphQL",
+        "children": []
+    },
+    "/git/": {
+        "title": "Git",
+        "children": []
+    },
+    "/elasticsearch/": {
+        "title": "ElasticSearch",
+        "children": []
+    },
+    "/effective-communication/": {
+        "title": "Effective Communication",
+        "children": []
+    },
+    "/docker/": {
+        "title": "Docker",
+        "children": []
+    },
+    "/db/": {
+        "title": "Database Systems",
+        "children": []
+    },
+    "/cpp/": {
+        "title": "C++",
+        "children": []
+    },
+    "/aws/": {
+        "title": "AWS",
+        "children": []
+    },
+    "/SEO/": {
+        "title": "SEO",
+        "children": []
+    },
+    "/IDE/": {
+        "title": "IDE / Code Editors",
+        "children": []
+    },
+    "/Crypto/": {
+        "title": "Cryptography",
+        "children": []
+    }
+}

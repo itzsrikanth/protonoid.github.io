@@ -5,26 +5,36 @@ const express = require('express');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
+const dyna = require('./utils/dynamicMapGenerator.js');
 
-require('./walk.js').then(fileList => {
+console.log(dyna);
+
+require('./walk').then(fileList => {
   app.prepare().then(() => {
     const server = express();
     server.get('/blogs/articles/*', (req, res) => {
-      const fileIndex = fileList.findIndex(
-        file => file.location.replace(/\/$/, '') === req.originalUrl
-          .replace(/\/blogs\/articles/, '')
-          .replace(/\/$/, '')
-      );
-      if (fileIndex !== -1) {
-        return app.render(req, res, '/articles', {
-          ...fileList[fileIndex].markdown
+      const mapping = fileList.reduce((acc, file) => {
+        const splits = file.location.substring(1, file.location.length - 1).split('/');
+        for (let i = 0; i < splits.length; i++) {
+          const key = splits.slice(0, i + 1)
+            .join('/');
+          const leafPage = i + 1 === splits.length;
+          acc[`/blogs/articles/${key}/`] = {
+            page: leafPage ? '/articles' : '/articleHomepage',
+            query: leafPage ? file.markdown : fileList
+          };
+        }
+        return acc;
+      }, {});
+      if (mapping[req.originalUrl]) {
+        return app.render(req, res, mapping[req.originalUrl].page, {
+          ...mapping[req.originalUrl].query
         });
       } else {
-        console.log(JSON.stringify(fileList));
-        console.log('watermelon: ' + req.originalUrl + '  ' + fileIndex);
+        console.log('watermelon: ' + req.originalUrl);
       }
     });
-  
+   
     server.get('*', (req, res) => {
       console.log('it was me: ' + req.url);
       return handle(req, res);

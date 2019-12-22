@@ -3,20 +3,24 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 
 import '../global.scss';
+import catMap from '../categoryMap.json';
 
 class Articles extends React.Component {
     static async getInitialProps(req) {
         return {
-            articles: Object.keys(req.query).map(key => req.query[key])
+            categories: Object.keys(req.query)
+                .map(key => /^\/[^\/]+\//.exec(req.query[key].location)[0])
+                .filter((value, index, self) => self.indexOf(value) === index)
         };
     }
     render() {
-        let i, links = [];
-        for(i = 0; i < this.props.articles.length; i++) {
+        let i; 
+        const links = [];
+        for(i = 0; i < this.props.categories.length; i++) {
             links.push(
                 <li key={i}>
-                    <Link href={`/blogs/articles${this.props.articles[i].location}`}>
-                        <a>{this.props.articles[i].markdown.attributes.title}</a>
+                    <Link href={`/blogs/articles${this.props.categories[i]}`}>
+                        <a>{catMap[this.props.categories[i]].title}</a>
                     </Link>
                 </li>
             );
