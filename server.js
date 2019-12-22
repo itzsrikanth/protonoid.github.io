@@ -13,9 +13,16 @@ require('./walk').then(fileList => {
       const mapping = fileList.reduce(
         require('./utils/dynamicMapGenerator'), {}
       );
-      if (mapping[req.originalUrl]) {
-        return app.render(req, res, mapping[req.originalUrl].page, {
-          ...mapping[req.originalUrl].query
+      /**
+       * When the request comes in without trailing slash,
+       * it is added and checked with pages mapping
+       */
+      const urlSanitise = /\/$/.test(req.originalUrl)
+        ? req.originalUrl
+        : `${req.originalUrl}/`;
+      if (mapping[urlSanitise]) {
+        return app.render(req, res, mapping[urlSanitise].page, {
+          ...mapping[urlSanitise].query
         });
       } else {
         console.log('watermelon: ' + req.originalUrl);

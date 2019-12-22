@@ -3,15 +3,13 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 
 import '../global.scss';
-import catMap from '../categoryMap.json';
 
 class Articles extends React.Component {
 
     static async getInitialProps(req) {
         return {
             categories: Object.keys(req.query)
-                .map(key => /^\/[^\/]+\//.exec(req.query[key].location)[0])
-                .filter((value, index, self) => self.indexOf(value) === index)
+                .map(key => req.query[key])
         };
     }
 
@@ -34,16 +32,15 @@ class Articles extends React.Component {
         let i;
         const links = [];
         const slug = this.props.router.asPath.replace(/^\/blogs\/articles/, '');
-        const categories = slug
-            ? this.findChildCategories(
-                catMap, slug, ''
-            )
-            : this.props.categories;
+        const categories = this.props.categories.filter(cat => {
+            return cat.location.startsWith(slug) &&
+                cat.location.replace(/\/$/, '') !== slug.replace(/\/$/, '')
+        });
         for(i = 0; i < categories.length; i++) {
             links.push(
                 <li key={i}>
-                    <Link href={`/blogs/articles${this.props.categories[i]}`}>
-                        <a>{catMap[this.props.categories[i]].title}</a>
+                    <Link href={`/blogs/articles${categories[i].location}`}>
+                        <a>{categories[i].markdown.attributes.title}</a>
                     </Link>
                 </li>
             );
