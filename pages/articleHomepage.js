@@ -13,29 +13,48 @@ class Articles extends React.Component {
         };
     }
 
-    findChildCategories(catMap, origUrl, fullUrl) {
-        const topLevel = /^\/[^\/]+\//.exec(origUrl)[0];
-        const bottomLevel = /\/[^\/]+\/$/.exec(origUrl)[0];
-        fullUrl += topLevel;
-        if (catMap[bottomLevel]) {
-            return Object.keys(catMap[bottomLevel].children)
-                .map(value => `${fullUrl}${value}`.replace(/\/{2,}/, '/'));
-        } else {
-            return this.findChildCategories(
-                catMap[topLevel],
-                origUrl.replace(topLevel, '/')
-            );
-        }
-    }
-
     render() {
         let i;
         const links = [];
+        /**
+         * The request comes in with `/blogs/articles` appended,
+         * it is removed to follow the directory structure in this project
+         */
         const slug = this.props.router.asPath.replace(/^\/blogs\/articles/, '');
+        /**
+         * `thisRouteValue` is initialized with a structured value to avoid
+         * null check error in heading. Fallback title is mentioned there
+         */
+        let thisRouteValue = {
+            markdown: {
+                attributes: {}
+            }
+        };
         const categories = this.props.categories.filter(cat => {
-            return cat.location.startsWith(slug) &&
-                cat.location.replace(/\/$/, '') !== slug.replace(/\/$/, '')
+            /**
+             * this check is to remove current page being listed as its 
+             * own sub-categories. Current URL details are collected into
+             * `thisRouteValue`
+             */
+            const sanitySlug = /\/$/.test(slug) ? slug : `${slug}/`;
+            const currentRouteCheck = cat.location === sanitySlug;
+            if (currentRouteCheck) {
+                thisRouteValue = cat;
+            }
+            const depth = cat.location
+                .replace(sanitySlug, '')
+                .replace(/\/$/, '')
+                .split('/').length;
+            /**
+             * The conditions for filter are:
+             * 1) it should start with current path
+             * 2) it should not be full match for current path
+             * 3) it should be just one step deeper, not more than that. More
+             *      deeper paths should be nested as sub-sub-category.
+             */
+            return cat.location.startsWith(slug) && !currentRouteCheck && depth === 1;
         });
+        console.log('categories', categories);
         for(i = 0; i < categories.length; i++) {
             links.push(
                 <li key={i}>
@@ -47,7 +66,7 @@ class Articles extends React.Component {
         }
         return (
             <>
-                <h1>Article Homepage</h1>
+                <h1>{ thisRouteValue.markdown.attributes.title || 'Article Categories' }</h1>
                 <Link href="/"><a>Go Home</a></Link>
                 <ul>
                     { links }
