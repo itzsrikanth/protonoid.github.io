@@ -1,5 +1,6 @@
 ---
 title: Simple Use Cases - Shell Script
+description: Some simple use cases to have an exposure on its applications
 ---
 # Shell Script Simple Use Cases
 ## To convert nunjuck template without space
