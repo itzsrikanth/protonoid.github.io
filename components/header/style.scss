@@ -1,3 +1,9 @@
+@import '../../variables.scss';
+
 nav {
-    background-color: purple;
+    background-color: $primary;
+    min-height: 3rem;
+    a {
+        color: $accentLinkColor;
+    }
 }

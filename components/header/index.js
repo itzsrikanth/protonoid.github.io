@@ -13,7 +13,7 @@ class Header extends React.Component {
                     <title>{this.props.attrib.title}</title>
                     <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
-                <nav>
+                <nav className="d-flex align-items-center">
                     <div className="container">
                         <ul>
                             <li>
