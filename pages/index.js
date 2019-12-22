@@ -1,15 +1,18 @@
 import React from 'react';
 import { withRouter } from 'next/router';
-import Link from 'next/link';
 
-import '../global.scss';
+import Layout from '../components/layout';
 
 class App extends React.Component {
     render() {
+        const body = (
+            <div className="container">
+                <h1>Hello, World..!!</h1>
+            </div>
+        );
         return (
             <>
-                <h1>Hello, World..!!</h1>
-                <Link href="/blogs"><a>Blogs</a></Link>
+                <Layout attrib={{title: 'Welcome to Protonoid'}} body={body}></Layout>
             </>
         );
     }

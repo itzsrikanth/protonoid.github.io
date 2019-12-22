@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 
-import '../global.scss';
+import Layout from '../components/layout';
 
 class Articles extends React.Component {
 
@@ -54,7 +54,6 @@ class Articles extends React.Component {
              */
             return cat.location.startsWith(slug) && !currentRouteCheck && depth === 1;
         });
-        console.log('categories', categories);
         for(i = 0; i < categories.length; i++) {
             links.push(
                 <li key={i}>
@@ -64,15 +63,16 @@ class Articles extends React.Component {
                 </li>
             );
         }
-        return (
+        const body = (
             <>
                 <h1>{ thisRouteValue.markdown.attributes.title || 'Article Categories' }</h1>
-                <Link href="/"><a>Go Home</a></Link>
                 <ul>
                     { links }
                 </ul>
             </>
         );
+        return <Layout attrib={thisRouteValue.markdown.attributes} body={body}></Layout>
+        // return body;
     }
 }
 

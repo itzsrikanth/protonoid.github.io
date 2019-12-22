@@ -1,8 +1,7 @@
 import React from 'react';
-import Head from 'next/head';
 import { withRouter } from 'next/router';
 
-import '../global.scss';
+import Layout from '../components/layout';
 
 class Article extends React.Component {
     static async getInitialProps(req) {
@@ -13,15 +12,14 @@ class Article extends React.Component {
 
     render() {
         const { body, attributes } = this.props.router.query;
-        return (
+        const layoutBody = (
             <>
-                <Head>
-                    <title>{ attributes.title }</title>
-                    <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
-                </Head>
-                <div className="container" dangerouslySetInnerHTML={{ __html: body }}></div>
+                <div dangerouslySetInnerHTML={{ __html: body }}></div>
             </>
         );
+        return (
+            <Layout attrib={attributes} body={layoutBody}></Layout>
+        )
     }
 }
 
