@@ -1,7 +1,14 @@
 {
     "/shell-script/": {
         "title": "Shell Scripting",
-        "children": []
+        "children": {
+            "/one-liner/": {
+                "title": "Shell Script One Liners"
+            },
+            "/simple-use-cases/": {
+                "title": "Simple use cases"
+            }
+        }
     },
     "/python/": {
         "title": "Python",
@@ -28,7 +35,7 @@
         "children": []
     },
     "/elasticsearch/": {
-        "title": "ElasticSearch",
+        "title": "Elastic Search",
         "children": []
     },
     "/effective-communication/": {

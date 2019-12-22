@@ -6,6 +6,7 @@ import '../global.scss';
 import catMap from '../categoryMap.json';
 
 class Articles extends React.Component {
+
     static async getInitialProps(req) {
         return {
             categories: Object.keys(req.query)
@@ -13,10 +14,32 @@ class Articles extends React.Component {
                 .filter((value, index, self) => self.indexOf(value) === index)
         };
     }
+
+    findChildCategories(catMap, origUrl, fullUrl) {
+        const topLevel = /^\/[^\/]+\//.exec(origUrl)[0];
+        const bottomLevel = /\/[^\/]+\/$/.exec(origUrl)[0];
+        fullUrl += topLevel;
+        if (catMap[bottomLevel]) {
+            return Object.keys(catMap[bottomLevel].children)
+                .map(value => `${fullUrl}${value}`.replace(/\/{2,}/, '/'));
+        } else {
+            return this.findChildCategories(
+                catMap[topLevel],
+                origUrl.replace(topLevel, '/')
+            );
+        }
+    }
+
     render() {
-        let i; 
+        let i;
         const links = [];
-        for(i = 0; i < this.props.categories.length; i++) {
+        const slug = this.props.router.asPath.replace(/^\/blogs\/articles/, '');
+        const categories = slug
+            ? this.findChildCategories(
+                catMap, slug, ''
+            )
+            : this.props.categories;
+        for(i = 0; i < categories.length; i++) {
             links.push(
                 <li key={i}>
                     <Link href={`/blogs/articles${this.props.categories[i]}`}>
