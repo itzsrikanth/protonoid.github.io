@@ -1,3 +1,9 @@
+nav {
+  background-color: #1f1f1f;
+  min-height: 3rem; }
+  nav a {
+    color: white; }
+
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -2739,6 +2745,8 @@ template {
 html, body {
   font-size: 16px; }
 
-body {
-  padding: 1rem; }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
