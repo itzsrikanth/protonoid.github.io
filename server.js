@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const next = require('next');
 const express = require('express');
 const dev = process.env.NODE_ENV !== 'production';
@@ -9,6 +10,16 @@ const handle = app.getRequestHandler();
 require('./walk').then(fileList => {
   app.prepare().then(() => {
     const server = express();
+    server.get('/sitemap.xml', (req, res) => {
+      res.set('Content-Type', 'application/xml');
+      fs.readFile('sitemap.xml', 'utf8', (err, data) => {
+        if (err) {
+          res.status(404).send();
+        } else {
+          res.status(200).send(data);
+        }
+      })
+    });
     server.get('/blogs/articles/*', (req, res) => {
       const mapping = fileList.reduce(
         require('./utils/dynamicMapGenerator'), {}
