@@ -54,20 +54,27 @@ class Articles extends React.Component {
              */
             return cat.location.startsWith(slug) && !currentRouteCheck && depth === 1;
         });
-        for(i = 0; i < categories.length; i++) {
+        for (i = 0; i < categories.length; i++) {
             links.push(
-                <li key={i}>
-                    <Link href={`/blogs/articles${categories[i].location}`}>
-                        <a>{categories[i].markdown.attributes.title}</a>
-                    </Link>
+                <li className="col-md-3" key={i}>
+                    <div>
+                        <Link href={`/blogs/articles${categories[i].location}`}>
+                            <a>{categories[i].markdown.attributes.title}</a>
+                        </Link>
+                    </div>
                 </li>
             );
         }
+        const firstFold = slug
+            ? <div className="row">
+                <div className="col-md-12" dangerouslySetInnerHTML={{ __html: thisRouteValue.markdown.body }}></div>
+            </div>
+            : <h1>Article Categories</h1>;
         const body = (
             <>
-                <h1>{ thisRouteValue.markdown.attributes.title || 'Article Categories' }</h1>
-                <ul>
-                    { links }
+                {firstFold}
+                <ul className="row">
+                    {links}
                 </ul>
             </>
         );
