@@ -9,3 +9,11 @@ title: Basics of AWS Cloudformation
 - When AWS CloudFormation creates the resource, it generates a physical name that is based on the combination of the logical name, the stack name, and a unique ID.
 - Pseudo parameters are resolved by AWS CloudFormation when you create the stack.
 - By default, the cfn-hup daemon runs every 15 minutes, so it may take up to 15 minutes for the application to change once the stack has been updated.
+
+## Cloudformation built in functions
+### Cookbook
+#### Cross reference
+Say, we have a S3 resource with name `RawDataStorage` and we output the bucket's name. We can get it from some other resource defined in the template as:
+```
+!GetAtt RawDataStorage.Outputs.BucketName
+```
