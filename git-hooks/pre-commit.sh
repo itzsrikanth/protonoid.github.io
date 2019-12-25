@@ -1,6 +1,6 @@
 #!/bin/bash
 
-URL=https://$(cat CNAME)
+URL=https://$(cat CNAME)/blogs/articles
 TMP=$(mktemp /tmp/XXXXXXXX)
 (git diff --name-status --cached |
     grep -E '^\w\s+content' |

@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.protonoid.com/SEO/</loc>
+        <loc>https://www.protonoid.com/blogs/articles/SEO/</loc>
         <lastmod>2019-12-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.protonoid.com/aws/Cloudtrail/</loc>
+        <loc>https://www.protonoid.com/blogs/articles/aws/Cloudtrail/</loc>
         <lastmod>2019-12-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.protonoid.com/blogs/articles/aws/cloudformation/introduction-basics/</loc>
+        <lastmod>2019-12-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.protonoid.com/blogs/articles/aws/sam/</loc>
+        <lastmod>2019-12-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.protonoid.com/blogs/articles/aws/serverless/</loc>
+        <lastmod>2019-12-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
