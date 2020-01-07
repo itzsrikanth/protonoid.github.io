@@ -22,6 +22,7 @@ class Header extends React.Component {
             <>
                 <Head>
                     {metaData}
+                    <meta charset="utf-8" />
                     <meta name="viewport" key="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                 </Head>
