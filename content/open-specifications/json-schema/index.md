@@ -1,0 +1,240 @@
+---
+title: JSON Schema
+---
+# JSON Schema
+
+## Introduction
+JSON Schema is a standards which is to defined a complex data type of JSON that is expected for a given resource / system / endpoint.
+
+## Hands-On
+Here, we can visit [JSON Schema Validator - Newtonsoft](https://www.jsonschemavalidator.net/). It contains the following versions of official schema upto v7 as of January, 2020:
+
+- Custom empty schema
+- Schema Draft v7
+- Schema Draft v6
+- Schema Draft v4
+- Schema Draft v3
+
+Apart from the official schema versions, it supports pre-defined schemas from [JSON Schema Store](http://schemastore.org/json/) as well. Please refere the list below:
+- .angular-cli.json
+- Ansible
+- apple-app-site-association
+- appsscript.json
+- appsettings.json
+- appveyor.yml
+- arc.json
+- Avro Avsc
+- Azure IoT Edge deployment
+- Azure IoT Edge deployment template
+- Foxx Manifest
+- .asmdef
+- babelrc.json
+- .backportrc.json
+- batect.yml
+- .bootstraprc
+- bower.json
+- .bowerrc
+- behat.yml
+- bozr.suite.json
+- Bukkit plugin.yml
+- Buildkite
+- .build.yml
+- bundleconfig.json
+- BungeeCord plugin.yml
+- Carafe
+- circleciconfig.json
+- .cirrus.yml
+- .clasp.json
+- JSON schema for Codecov configuration files
+- compilerconfig.json
+- commands.json
+- cosmos.config.json
+- Chrome Extension
+- chutzpah.json
+- contentmanifest.json
+- cloud-sdk-pipeline-config-schema
+- cloudbuild.json
+- AWS CloudFormation
+- AWS CloudFormation Serverless Application Model (SAM)
+- coffeelint.json
+- composer.json
+- component.json
+- config.json
+- contribute.json
+- cypress.json
+- .creatomic
+- cspell
+- .csscomb.json
+- .csslintrc
+- datalogic-scan2deploy-android
+- datalogic-scan2deploy-ce
+- debugsettings.json
+- dependabot.json
+- docfx.json
+- Dolittle Artifacts
+- Dolittle Bounded Context Configuration
+- Dolittle Event Horizons Configuration
+- Dolittle Resources Configuration
+- Dolittle Server Configuration
+- Dolittle Tenants Configuration
+- Dolittle Tenant Map Configuration
+- Dolittle Topology
+- dotnetcli.host.json
+- drone.json
+- Drush site aliases
+- dss-2.0.0.json
+- Esquio
+- epr-manifest.json
+- electron-builder configuration file.
+- .eslintrc
+- fabric.mod.json
+- Fantomas
+- function.json
+- geojson.json
+- GitHub Action
+- GitHub Workflow
+- gitlab-ci
+- Gitpod Configuration
+- global.json
+- Grunt copy task
+- Grunt clean task
+- Grunt cssmin task
+- Grunt JSHint task
+- Grunt Watch task
+- Grunt base task
+- haxelib.json
+- host.json
+- host-meta.json
+- .htmlhintrc
+- imageoptimizer.json
+- Jekyll configuration
+- Jenkins X Pipelines
+- Jenkins X Requirements
+- .jsbeautifyrc
+- .jsbeautifyrc-nested
+- .jscsrc
+- .jshintrc
+- .jsinspectrc
+- JSON-API
+- JSON Document Transform
+- JSON Feed
+- *.jsonld
+- JSONPatch
+- jsconfig.json
+- kustomization.yaml
+- launchsettings.json
+- lerna.json
+- libman.json
+- lsdlschema.json
+- Microsoft Band Web Tile
+- mimetypes.json
+- .modernizrrc
+- mycode.json
+- ninjs (News in JSON)
+- nodemon.json
+- .npmpackagejsonlintrc
+- nuget-project.json
+- nswag.json
+- ocelot.json
+- omnisharp.json
+- openapi.json
+- openfin.json
+- package.json
+- package.manifest
+- pattern.json
+- PocketMine plugin.yml
+- .phraseapp.yml
+- prettierrc.json
+- prisma.yml
+- project.json
+- project-1.0.0-beta3.json
+- project-1.0.0-beta4.json
+- project-1.0.0-beta5.json
+- project-1.0.0-beta6.json
+- project-1.0.0-beta8.json
+- project-1.0.0-rc1.json
+- project-1.0.0-rc2.json
+- prometheus.json
+- prometheus.rules.json
+- proxies.json
+- pubspec.yaml
+- pyrseas-0.8.json
+- *.resjson
+- JSON Resume
+- Renovate
+- sarif-1.0.0.json
+- sarif-2.0.0.json
+- 2.0.0-csd.2.beta.2018-10-10
+- sarif-2.1.0-rtm.2
+- sarif-external-property-file-2.1.0-rtm.2
+- sarif-2.1.0-rtm.3
+- sarif-external-property-file-2.1.0-rtm.3
+- sarif-2.1.0-rtm.4
+- sarif-external-property-file-2.1.0-rtm.4
+- Schema Catalog
+- schema.org - Action
+- schema.org - ContactPoint
+- schema.org - Place
+- schema.org - Thing
+- settings.job
+- skyuxconfig.json
+- snapcraft
+- Solidarity
+- Source Maps v3
+- .sprite files
+- StyleCop Analyzers Configuration
+- .stylelintrc
+- Swagger API 2.0
+- template.json
+- templatsources.json
+- tmLanguage
+- .`travis`.yml
+- tsconfig.json
+- tsd.json
+- tsdrc.json
+- ts-force-config.json
+- tslint.json
+- typewiz.json
+- typings.json
+- typingsrc.json
+- up.json
+- ui5-manifest
+- vega.json
+- vega-lite.json
+- version.json
+- vsls.json
+- vs-2017.3.host.json
+- vs-nesting.json
+- .vsconfig
+- .vsext
+- VSIX CLI publishing
+- vss-extension.json
+- WebExtensions
+- Web Manifest
+- webjobs-list.json
+- webjobpublishsettings.json
+- Web types
+- JSON-stat 2.0
+- KSP-CKAN 1.26.4
+- JSON Schema Draft 4
+- xunit.runner.json
+- .cryproj engine-5.2
+- .cryproj engine-5.3
+- .cryproj engine-5.4
+- .cryproj engine-5.5
+- .cryproj engine-dev
+- .cryproj (generic)
+- typedoc.json
+- huskyrc
+- .lintstagedrc
+- mta.yaml
+- mtad.yaml
+- .mtaext
+- Opctl
+- HEMTT
+- now
+- taskcat
+- BizTalkServerApplicationSchema
+- httpmockrc
+- neoload
+- release drafter

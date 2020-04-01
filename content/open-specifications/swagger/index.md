@@ -1,5 +1,7 @@
 ---
-title: Swagger 2.0 Specification
+title: OpenAPI 3.0 Specification
 ---
 
-# Introduction
+# OpenAPI 3.0
+
+## Introduction

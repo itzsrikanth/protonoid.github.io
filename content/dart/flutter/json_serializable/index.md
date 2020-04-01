@@ -96,9 +96,15 @@ class Book {
 
 ## Build
 We need to trigger the build to generate the corresponding `book.g.dart`, `author.g.dart` and `publishser.g.dart`.
-
+```bash
+flutter packages pub run build_runner build
+```
 
 ## References
-Two examples are give as part of main library itself:
+Two examples are given as part of main library itself:
 - [json_serializable/example.dart at master · dart-lang/json_serializable · GitHub](https://github.com/dart-lang/json_serializable/blob/master/example/lib/example.dart)
 - [json_serializable/json_converter_example.dart at master · dart-lang/json_serializable · GitHub](https://github.com/dart-lang/json_serializable/blob/master/example/lib/json_converter_example.dart)
+
+Other sources are:
+- [Support deserialization to default enum value for unsupported values · Issue #504 · dart-lang/json_serializable · GitHub](https://github.com/dart-lang/json_serializable/issues/504#issuecomment-509530737)
+- [feature: allow customizing enum value serialization via annotations by kevmoo · Pull Request #251 · dart-lang/json_serializable · GitHub](https://github.com/dart-lang/json_serializable/pull/251/files#diff-8ecae88c9005ade7729762176511b1bf)

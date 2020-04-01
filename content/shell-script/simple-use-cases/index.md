@@ -13,3 +13,7 @@ find . -name index.html | while read line; do
 	perl -pi -e 's/(?<=[^-])(%|#)}/-\1}/g' $line
 done
 ```
+
+## cURL to calculate latency
+
+**Source: [How do I measure request and response times at once using cURL? - Stack Overflow](https://stackoverflow.com/a/22625150/5305151)**

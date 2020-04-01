@@ -34,6 +34,6 @@ using the above values we can set the following global variables:
 ```bash
 export AWS_ACCESS_KEY_ID="XXXXXXXXXXXXXXXXXX"
 export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxxxxxxxxxxxxxxxx"
-expoert AWS_SESSION_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxx=="
+export AWS_SESSION_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxx=="
 ```
 Now, we are ready use the AWS CLI or SDK.
