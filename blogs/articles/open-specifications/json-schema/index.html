@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>JSON Schema</title><meta charset="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="next-head-count" content="5"/><link rel="preload" href="/_next/static/css/commons.be16d001.chunk.css" as="style"/><link rel="stylesheet" href="/_next/static/css/commons.be16d001.chunk.css"/><link rel="preload" href="/_next/static/ZMhGs822iLmlZCYEc_a9c/pages/articles.js" as="script"/><link rel="preload" href="/_next/static/ZMhGs822iLmlZCYEc_a9c/pages/_app.js" as="script"/><link rel="preload" href="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.b6dc333151af4a74b05a.js" as="script"/><link rel="preload" href="/_next/static/runtime/main-5b3d9dcbbf35909ee5a1.js" as="script"/></head><body><div id="__next"><nav class="d-flex align-items-center"><div class="container"><ul><li><a href="/blogs">Blogs</a></li></ul></div></nav><div class="container"><div><h1 id="json-schema">JSON Schema</h1>
+<h2 id="introduction">Introduction</h2>
+<p>JSON Schema is a standards which is to defined a complex data type of JSON that is expected for a given resource / system / endpoint.</p>
+<h2 id="hands-on">Hands-On</h2>
+<p>Here, we can visit <a href="https://www.jsonschemavalidator.net/">JSON Schema Validator - Newtonsoft</a>. It contains the following versions of official schema upto v7 as of January, 2020:</p>
+<ul>
+<li>Custom empty schema</li>
+<li>Schema Draft v7</li>
+<li>Schema Draft v6</li>
+<li>Schema Draft v4</li>
+<li>Schema Draft v3</li>
+</ul>
+<p>Apart from the official schema versions, it supports pre-defined schemas from <a href="http://schemastore.org/json/">JSON Schema Store</a> as well. Please refere the list below:</p>
+<ul>
+<li>.angular-cli.json</li>
+<li>Ansible</li>
+<li>apple-app-site-association</li>
+<li>appsscript.json</li>
+<li>appsettings.json</li>
+<li>appveyor.yml</li>
+<li>arc.json</li>
+<li>Avro Avsc</li>
+<li>Azure IoT Edge deployment</li>
+<li>Azure IoT Edge deployment template</li>
+<li>Foxx Manifest</li>
+<li>.asmdef</li>
+<li>babelrc.json</li>
+<li>.backportrc.json</li>
+<li>batect.yml</li>
+<li>.bootstraprc</li>
+<li>bower.json</li>
+<li>.bowerrc</li>
+<li>behat.yml</li>
+<li>bozr.suite.json</li>
+<li>Bukkit plugin.yml</li>
+<li>Buildkite</li>
+<li>.build.yml</li>
+<li>bundleconfig.json</li>
+<li>BungeeCord plugin.yml</li>
+<li>Carafe</li>
+<li>circleciconfig.json</li>
+<li>.cirrus.yml</li>
+<li>.clasp.json</li>
+<li>JSON schema for Codecov configuration files</li>
+<li>compilerconfig.json</li>
+<li>commands.json</li>
+<li>cosmos.config.json</li>
+<li>Chrome Extension</li>
+<li>chutzpah.json</li>
+<li>contentmanifest.json</li>
+<li>cloud-sdk-pipeline-config-schema</li>
+<li>cloudbuild.json</li>
+<li>AWS CloudFormation</li>
+<li>AWS CloudFormation Serverless Application Model (SAM)</li>
+<li>coffeelint.json</li>
+<li>composer.json</li>
+<li>component.json</li>
+<li>config.json</li>
+<li>contribute.json</li>
+<li>cypress.json</li>
+<li>.creatomic</li>
+<li>cspell</li>
+<li>.csscomb.json</li>
+<li>.csslintrc</li>
+<li>datalogic-scan2deploy-android</li>
+<li>datalogic-scan2deploy-ce</li>
+<li>debugsettings.json</li>
+<li>dependabot.json</li>
+<li>docfx.json</li>
+<li>Dolittle Artifacts</li>
+<li>Dolittle Bounded Context Configuration</li>
+<li>Dolittle Event Horizons Configuration</li>
+<li>Dolittle Resources Configuration</li>
+<li>Dolittle Server Configuration</li>
+<li>Dolittle Tenants Configuration</li>
+<li>Dolittle Tenant Map Configuration</li>
+<li>Dolittle Topology</li>
+<li>dotnetcli.host.json</li>
+<li>drone.json</li>
+<li>Drush site aliases</li>
+<li>dss-2.0.0.json</li>
+<li>Esquio</li>
+<li>epr-manifest.json</li>
+<li>electron-builder configuration file.</li>
+<li>.eslintrc</li>
+<li>fabric.mod.json</li>
+<li>Fantomas</li>
+<li>function.json</li>
+<li>geojson.json</li>
+<li>GitHub Action</li>
+<li>GitHub Workflow</li>
+<li>gitlab-ci</li>
+<li>Gitpod Configuration</li>
+<li>global.json</li>
+<li>Grunt copy task</li>
+<li>Grunt clean task</li>
+<li>Grunt cssmin task</li>
+<li>Grunt JSHint task</li>
+<li>Grunt Watch task</li>
+<li>Grunt base task</li>
+<li>haxelib.json</li>
+<li>host.json</li>
+<li>host-meta.json</li>
+<li>.htmlhintrc</li>
+<li>imageoptimizer.json</li>
+<li>Jekyll configuration</li>
+<li>Jenkins X Pipelines</li>
+<li>Jenkins X Requirements</li>
+<li>.jsbeautifyrc</li>
+<li>.jsbeautifyrc-nested</li>
+<li>.jscsrc</li>
+<li>.jshintrc</li>
+<li>.jsinspectrc</li>
+<li>JSON-API</li>
+<li>JSON Document Transform</li>
+<li>JSON Feed</li>
+<li>*.jsonld</li>
+<li>JSONPatch</li>
+<li>jsconfig.json</li>
+<li>kustomization.yaml</li>
+<li>launchsettings.json</li>
+<li>lerna.json</li>
+<li>libman.json</li>
+<li>lsdlschema.json</li>
+<li>Microsoft Band Web Tile</li>
+<li>mimetypes.json</li>
+<li>.modernizrrc</li>
+<li>mycode.json</li>
+<li>ninjs (News in JSON)</li>
+<li>nodemon.json</li>
+<li>.npmpackagejsonlintrc</li>
+<li>nuget-project.json</li>
+<li>nswag.json</li>
+<li>ocelot.json</li>
+<li>omnisharp.json</li>
+<li>openapi.json</li>
+<li>openfin.json</li>
+<li>package.json</li>
+<li>package.manifest</li>
+<li>pattern.json</li>
+<li>PocketMine plugin.yml</li>
+<li>.phraseapp.yml</li>
+<li>prettierrc.json</li>
+<li>prisma.yml</li>
+<li>project.json</li>
+<li>project-1.0.0-beta3.json</li>
+<li>project-1.0.0-beta4.json</li>
+<li>project-1.0.0-beta5.json</li>
+<li>project-1.0.0-beta6.json</li>
+<li>project-1.0.0-beta8.json</li>
+<li>project-1.0.0-rc1.json</li>
+<li>project-1.0.0-rc2.json</li>
+<li>prometheus.json</li>
+<li>prometheus.rules.json</li>
+<li>proxies.json</li>
+<li>pubspec.yaml</li>
+<li>pyrseas-0.8.json</li>
+<li>*.resjson</li>
+<li>JSON Resume</li>
+<li>Renovate</li>
+<li>sarif-1.0.0.json</li>
+<li>sarif-2.0.0.json</li>
+<li>2.0.0-csd.2.beta.2018-10-10</li>
+<li>sarif-2.1.0-rtm.2</li>
+<li>sarif-external-property-file-2.1.0-rtm.2</li>
+<li>sarif-2.1.0-rtm.3</li>
+<li>sarif-external-property-file-2.1.0-rtm.3</li>
+<li>sarif-2.1.0-rtm.4</li>
+<li>sarif-external-property-file-2.1.0-rtm.4</li>
+<li>Schema Catalog</li>
+<li>schema.org - Action</li>
+<li>schema.org - ContactPoint</li>
+<li>schema.org - Place</li>
+<li>schema.org - Thing</li>
+<li>settings.job</li>
+<li>skyuxconfig.json</li>
+<li>snapcraft</li>
+<li>Solidarity</li>
+<li>Source Maps v3</li>
+<li>.sprite files</li>
+<li>StyleCop Analyzers Configuration</li>
+<li>.stylelintrc</li>
+<li>Swagger API 2.0</li>
+<li>template.json</li>
+<li>templatsources.json</li>
+<li>tmLanguage</li>
+<li>.<code>travis</code>.yml</li>
+<li>tsconfig.json</li>
+<li>tsd.json</li>
+<li>tsdrc.json</li>
+<li>ts-force-config.json</li>
+<li>tslint.json</li>
+<li>typewiz.json</li>
+<li>typings.json</li>
+<li>typingsrc.json</li>
+<li>up.json</li>
+<li>ui5-manifest</li>
+<li>vega.json</li>
+<li>vega-lite.json</li>
+<li>version.json</li>
+<li>vsls.json</li>
+<li>vs-2017.3.host.json</li>
+<li>vs-nesting.json</li>
+<li>.vsconfig</li>
+<li>.vsext</li>
+<li>VSIX CLI publishing</li>
+<li>vss-extension.json</li>
+<li>WebExtensions</li>
+<li>Web Manifest</li>
+<li>webjobs-list.json</li>
+<li>webjobpublishsettings.json</li>
+<li>Web types</li>
+<li>JSON-stat 2.0</li>
+<li>KSP-CKAN 1.26.4</li>
+<li>JSON Schema Draft 4</li>
+<li>xunit.runner.json</li>
+<li>.cryproj engine-5.2</li>
+<li>.cryproj engine-5.3</li>
+<li>.cryproj engine-5.4</li>
+<li>.cryproj engine-5.5</li>
+<li>.cryproj engine-dev</li>
+<li>.cryproj (generic)</li>
+<li>typedoc.json</li>
+<li>huskyrc</li>
+<li>.lintstagedrc</li>
+<li>mta.yaml</li>
+<li>mtad.yaml</li>
+<li>.mtaext</li>
+<li>Opctl</li>
+<li>HEMTT</li>
+<li>now</li>
+<li>taskcat</li>
+<li>BizTalkServerApplicationSchema</li>
+<li>httpmockrc</li>
+<li>neoload</li>
+<li>release drafter</li>
+</ul>
+</div></div></div><script id="__NEXT_DATA__" type="application/json">{"dataManager":"[]","props":{"pageProps":{}},"page":"/articles","query":{"attributes":{"title":"JSON Schema"},"body":"\u003ch1 id=\"json-schema\"\u003eJSON Schema\u003c/h1\u003e\n\u003ch2 id=\"introduction\"\u003eIntroduction\u003c/h2\u003e\n\u003cp\u003eJSON Schema is a standards which is to defined a complex data type of JSON that is expected for a given resource / system / endpoint.\u003c/p\u003e\n\u003ch2 id=\"hands-on\"\u003eHands-On\u003c/h2\u003e\n\u003cp\u003eHere, we can visit \u003ca href=\"https://www.jsonschemavalidator.net/\"\u003eJSON Schema Validator - Newtonsoft\u003c/a\u003e. It contains the following versions of official schema upto v7 as of January, 2020:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCustom empty schema\u003c/li\u003e\n\u003cli\u003eSchema Draft v7\u003c/li\u003e\n\u003cli\u003eSchema Draft v6\u003c/li\u003e\n\u003cli\u003eSchema Draft v4\u003c/li\u003e\n\u003cli\u003eSchema Draft v3\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eApart from the official schema versions, it supports pre-defined schemas from \u003ca href=\"http://schemastore.org/json/\"\u003eJSON Schema Store\u003c/a\u003e as well. Please refere the list below:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e.angular-cli.json\u003c/li\u003e\n\u003cli\u003eAnsible\u003c/li\u003e\n\u003cli\u003eapple-app-site-association\u003c/li\u003e\n\u003cli\u003eappsscript.json\u003c/li\u003e\n\u003cli\u003eappsettings.json\u003c/li\u003e\n\u003cli\u003eappveyor.yml\u003c/li\u003e\n\u003cli\u003earc.json\u003c/li\u003e\n\u003cli\u003eAvro Avsc\u003c/li\u003e\n\u003cli\u003eAzure IoT Edge deployment\u003c/li\u003e\n\u003cli\u003eAzure IoT Edge deployment template\u003c/li\u003e\n\u003cli\u003eFoxx Manifest\u003c/li\u003e\n\u003cli\u003e.asmdef\u003c/li\u003e\n\u003cli\u003ebabelrc.json\u003c/li\u003e\n\u003cli\u003e.backportrc.json\u003c/li\u003e\n\u003cli\u003ebatect.yml\u003c/li\u003e\n\u003cli\u003e.bootstraprc\u003c/li\u003e\n\u003cli\u003ebower.json\u003c/li\u003e\n\u003cli\u003e.bowerrc\u003c/li\u003e\n\u003cli\u003ebehat.yml\u003c/li\u003e\n\u003cli\u003ebozr.suite.json\u003c/li\u003e\n\u003cli\u003eBukkit plugin.yml\u003c/li\u003e\n\u003cli\u003eBuildkite\u003c/li\u003e\n\u003cli\u003e.build.yml\u003c/li\u003e\n\u003cli\u003ebundleconfig.json\u003c/li\u003e\n\u003cli\u003eBungeeCord plugin.yml\u003c/li\u003e\n\u003cli\u003eCarafe\u003c/li\u003e\n\u003cli\u003ecircleciconfig.json\u003c/li\u003e\n\u003cli\u003e.cirrus.yml\u003c/li\u003e\n\u003cli\u003e.clasp.json\u003c/li\u003e\n\u003cli\u003eJSON schema for Codecov configuration files\u003c/li\u003e\n\u003cli\u003ecompilerconfig.json\u003c/li\u003e\n\u003cli\u003ecommands.json\u003c/li\u003e\n\u003cli\u003ecosmos.config.json\u003c/li\u003e\n\u003cli\u003eChrome Extension\u003c/li\u003e\n\u003cli\u003echutzpah.json\u003c/li\u003e\n\u003cli\u003econtentmanifest.json\u003c/li\u003e\n\u003cli\u003ecloud-sdk-pipeline-config-schema\u003c/li\u003e\n\u003cli\u003ecloudbuild.json\u003c/li\u003e\n\u003cli\u003eAWS CloudFormation\u003c/li\u003e\n\u003cli\u003eAWS CloudFormation Serverless Application Model (SAM)\u003c/li\u003e\n\u003cli\u003ecoffeelint.json\u003c/li\u003e\n\u003cli\u003ecomposer.json\u003c/li\u003e\n\u003cli\u003ecomponent.json\u003c/li\u003e\n\u003cli\u003econfig.json\u003c/li\u003e\n\u003cli\u003econtribute.json\u003c/li\u003e\n\u003cli\u003ecypress.json\u003c/li\u003e\n\u003cli\u003e.creatomic\u003c/li\u003e\n\u003cli\u003ecspell\u003c/li\u003e\n\u003cli\u003e.csscomb.json\u003c/li\u003e\n\u003cli\u003e.csslintrc\u003c/li\u003e\n\u003cli\u003edatalogic-scan2deploy-android\u003c/li\u003e\n\u003cli\u003edatalogic-scan2deploy-ce\u003c/li\u003e\n\u003cli\u003edebugsettings.json\u003c/li\u003e\n\u003cli\u003edependabot.json\u003c/li\u003e\n\u003cli\u003edocfx.json\u003c/li\u003e\n\u003cli\u003eDolittle Artifacts\u003c/li\u003e\n\u003cli\u003eDolittle Bounded Context Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Event Horizons Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Resources Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Server Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Tenants Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Tenant Map Configuration\u003c/li\u003e\n\u003cli\u003eDolittle Topology\u003c/li\u003e\n\u003cli\u003edotnetcli.host.json\u003c/li\u003e\n\u003cli\u003edrone.json\u003c/li\u003e\n\u003cli\u003eDrush site aliases\u003c/li\u003e\n\u003cli\u003edss-2.0.0.json\u003c/li\u003e\n\u003cli\u003eEsquio\u003c/li\u003e\n\u003cli\u003eepr-manifest.json\u003c/li\u003e\n\u003cli\u003eelectron-builder configuration file.\u003c/li\u003e\n\u003cli\u003e.eslintrc\u003c/li\u003e\n\u003cli\u003efabric.mod.json\u003c/li\u003e\n\u003cli\u003eFantomas\u003c/li\u003e\n\u003cli\u003efunction.json\u003c/li\u003e\n\u003cli\u003egeojson.json\u003c/li\u003e\n\u003cli\u003eGitHub Action\u003c/li\u003e\n\u003cli\u003eGitHub Workflow\u003c/li\u003e\n\u003cli\u003egitlab-ci\u003c/li\u003e\n\u003cli\u003eGitpod Configuration\u003c/li\u003e\n\u003cli\u003eglobal.json\u003c/li\u003e\n\u003cli\u003eGrunt copy task\u003c/li\u003e\n\u003cli\u003eGrunt clean task\u003c/li\u003e\n\u003cli\u003eGrunt cssmin task\u003c/li\u003e\n\u003cli\u003eGrunt JSHint task\u003c/li\u003e\n\u003cli\u003eGrunt Watch task\u003c/li\u003e\n\u003cli\u003eGrunt base task\u003c/li\u003e\n\u003cli\u003ehaxelib.json\u003c/li\u003e\n\u003cli\u003ehost.json\u003c/li\u003e\n\u003cli\u003ehost-meta.json\u003c/li\u003e\n\u003cli\u003e.htmlhintrc\u003c/li\u003e\n\u003cli\u003eimageoptimizer.json\u003c/li\u003e\n\u003cli\u003eJekyll configuration\u003c/li\u003e\n\u003cli\u003eJenkins X Pipelines\u003c/li\u003e\n\u003cli\u003eJenkins X Requirements\u003c/li\u003e\n\u003cli\u003e.jsbeautifyrc\u003c/li\u003e\n\u003cli\u003e.jsbeautifyrc-nested\u003c/li\u003e\n\u003cli\u003e.jscsrc\u003c/li\u003e\n\u003cli\u003e.jshintrc\u003c/li\u003e\n\u003cli\u003e.jsinspectrc\u003c/li\u003e\n\u003cli\u003eJSON-API\u003c/li\u003e\n\u003cli\u003eJSON Document Transform\u003c/li\u003e\n\u003cli\u003eJSON Feed\u003c/li\u003e\n\u003cli\u003e*.jsonld\u003c/li\u003e\n\u003cli\u003eJSONPatch\u003c/li\u003e\n\u003cli\u003ejsconfig.json\u003c/li\u003e\n\u003cli\u003ekustomization.yaml\u003c/li\u003e\n\u003cli\u003elaunchsettings.json\u003c/li\u003e\n\u003cli\u003elerna.json\u003c/li\u003e\n\u003cli\u003elibman.json\u003c/li\u003e\n\u003cli\u003elsdlschema.json\u003c/li\u003e\n\u003cli\u003eMicrosoft Band Web Tile\u003c/li\u003e\n\u003cli\u003emimetypes.json\u003c/li\u003e\n\u003cli\u003e.modernizrrc\u003c/li\u003e\n\u003cli\u003emycode.json\u003c/li\u003e\n\u003cli\u003eninjs (News in JSON)\u003c/li\u003e\n\u003cli\u003enodemon.json\u003c/li\u003e\n\u003cli\u003e.npmpackagejsonlintrc\u003c/li\u003e\n\u003cli\u003enuget-project.json\u003c/li\u003e\n\u003cli\u003enswag.json\u003c/li\u003e\n\u003cli\u003eocelot.json\u003c/li\u003e\n\u003cli\u003eomnisharp.json\u003c/li\u003e\n\u003cli\u003eopenapi.json\u003c/li\u003e\n\u003cli\u003eopenfin.json\u003c/li\u003e\n\u003cli\u003epackage.json\u003c/li\u003e\n\u003cli\u003epackage.manifest\u003c/li\u003e\n\u003cli\u003epattern.json\u003c/li\u003e\n\u003cli\u003ePocketMine plugin.yml\u003c/li\u003e\n\u003cli\u003e.phraseapp.yml\u003c/li\u003e\n\u003cli\u003eprettierrc.json\u003c/li\u003e\n\u003cli\u003eprisma.yml\u003c/li\u003e\n\u003cli\u003eproject.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-beta3.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-beta4.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-beta5.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-beta6.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-beta8.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-rc1.json\u003c/li\u003e\n\u003cli\u003eproject-1.0.0-rc2.json\u003c/li\u003e\n\u003cli\u003eprometheus.json\u003c/li\u003e\n\u003cli\u003eprometheus.rules.json\u003c/li\u003e\n\u003cli\u003eproxies.json\u003c/li\u003e\n\u003cli\u003epubspec.yaml\u003c/li\u003e\n\u003cli\u003epyrseas-0.8.json\u003c/li\u003e\n\u003cli\u003e*.resjson\u003c/li\u003e\n\u003cli\u003eJSON Resume\u003c/li\u003e\n\u003cli\u003eRenovate\u003c/li\u003e\n\u003cli\u003esarif-1.0.0.json\u003c/li\u003e\n\u003cli\u003esarif-2.0.0.json\u003c/li\u003e\n\u003cli\u003e2.0.0-csd.2.beta.2018-10-10\u003c/li\u003e\n\u003cli\u003esarif-2.1.0-rtm.2\u003c/li\u003e\n\u003cli\u003esarif-external-property-file-2.1.0-rtm.2\u003c/li\u003e\n\u003cli\u003esarif-2.1.0-rtm.3\u003c/li\u003e\n\u003cli\u003esarif-external-property-file-2.1.0-rtm.3\u003c/li\u003e\n\u003cli\u003esarif-2.1.0-rtm.4\u003c/li\u003e\n\u003cli\u003esarif-external-property-file-2.1.0-rtm.4\u003c/li\u003e\n\u003cli\u003eSchema Catalog\u003c/li\u003e\n\u003cli\u003eschema.org - Action\u003c/li\u003e\n\u003cli\u003eschema.org - ContactPoint\u003c/li\u003e\n\u003cli\u003eschema.org - Place\u003c/li\u003e\n\u003cli\u003eschema.org - Thing\u003c/li\u003e\n\u003cli\u003esettings.job\u003c/li\u003e\n\u003cli\u003eskyuxconfig.json\u003c/li\u003e\n\u003cli\u003esnapcraft\u003c/li\u003e\n\u003cli\u003eSolidarity\u003c/li\u003e\n\u003cli\u003eSource Maps v3\u003c/li\u003e\n\u003cli\u003e.sprite files\u003c/li\u003e\n\u003cli\u003eStyleCop Analyzers Configuration\u003c/li\u003e\n\u003cli\u003e.stylelintrc\u003c/li\u003e\n\u003cli\u003eSwagger API 2.0\u003c/li\u003e\n\u003cli\u003etemplate.json\u003c/li\u003e\n\u003cli\u003etemplatsources.json\u003c/li\u003e\n\u003cli\u003etmLanguage\u003c/li\u003e\n\u003cli\u003e.\u003ccode\u003etravis\u003c/code\u003e.yml\u003c/li\u003e\n\u003cli\u003etsconfig.json\u003c/li\u003e\n\u003cli\u003etsd.json\u003c/li\u003e\n\u003cli\u003etsdrc.json\u003c/li\u003e\n\u003cli\u003ets-force-config.json\u003c/li\u003e\n\u003cli\u003etslint.json\u003c/li\u003e\n\u003cli\u003etypewiz.json\u003c/li\u003e\n\u003cli\u003etypings.json\u003c/li\u003e\n\u003cli\u003etypingsrc.json\u003c/li\u003e\n\u003cli\u003eup.json\u003c/li\u003e\n\u003cli\u003eui5-manifest\u003c/li\u003e\n\u003cli\u003evega.json\u003c/li\u003e\n\u003cli\u003evega-lite.json\u003c/li\u003e\n\u003cli\u003eversion.json\u003c/li\u003e\n\u003cli\u003evsls.json\u003c/li\u003e\n\u003cli\u003evs-2017.3.host.json\u003c/li\u003e\n\u003cli\u003evs-nesting.json\u003c/li\u003e\n\u003cli\u003e.vsconfig\u003c/li\u003e\n\u003cli\u003e.vsext\u003c/li\u003e\n\u003cli\u003eVSIX CLI publishing\u003c/li\u003e\n\u003cli\u003evss-extension.json\u003c/li\u003e\n\u003cli\u003eWebExtensions\u003c/li\u003e\n\u003cli\u003eWeb Manifest\u003c/li\u003e\n\u003cli\u003ewebjobs-list.json\u003c/li\u003e\n\u003cli\u003ewebjobpublishsettings.json\u003c/li\u003e\n\u003cli\u003eWeb types\u003c/li\u003e\n\u003cli\u003eJSON-stat 2.0\u003c/li\u003e\n\u003cli\u003eKSP-CKAN 1.26.4\u003c/li\u003e\n\u003cli\u003eJSON Schema Draft 4\u003c/li\u003e\n\u003cli\u003exunit.runner.json\u003c/li\u003e\n\u003cli\u003e.cryproj engine-5.2\u003c/li\u003e\n\u003cli\u003e.cryproj engine-5.3\u003c/li\u003e\n\u003cli\u003e.cryproj engine-5.4\u003c/li\u003e\n\u003cli\u003e.cryproj engine-5.5\u003c/li\u003e\n\u003cli\u003e.cryproj engine-dev\u003c/li\u003e\n\u003cli\u003e.cryproj (generic)\u003c/li\u003e\n\u003cli\u003etypedoc.json\u003c/li\u003e\n\u003cli\u003ehuskyrc\u003c/li\u003e\n\u003cli\u003e.lintstagedrc\u003c/li\u003e\n\u003cli\u003emta.yaml\u003c/li\u003e\n\u003cli\u003emtad.yaml\u003c/li\u003e\n\u003cli\u003e.mtaext\u003c/li\u003e\n\u003cli\u003eOpctl\u003c/li\u003e\n\u003cli\u003eHEMTT\u003c/li\u003e\n\u003cli\u003enow\u003c/li\u003e\n\u003cli\u003etaskcat\u003c/li\u003e\n\u003cli\u003eBizTalkServerApplicationSchema\u003c/li\u003e\n\u003cli\u003ehttpmockrc\u003c/li\u003e\n\u003cli\u003eneoload\u003c/li\u003e\n\u003cli\u003erelease drafter\u003c/li\u003e\n\u003c/ul\u003e\n","frontmatter":"title: JSON Schema"},"buildId":"ZMhGs822iLmlZCYEc_a9c","nextExport":true}</script><script nomodule="" src="/_next/static/runtime/polyfills-5fa5b8189f4681d353e9.js"></script><script async="" data-next-page="/articles" src="/_next/static/ZMhGs822iLmlZCYEc_a9c/pages/articles.js"></script><script async="" data-next-page="/_app" src="/_next/static/ZMhGs822iLmlZCYEc_a9c/pages/_app.js"></script><script src="/_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" async=""></script><script src="/_next/static/chunks/commons.b6dc333151af4a74b05a.js" async=""></script><script src="/_next/static/runtime/main-5b3d9dcbbf35909ee5a1.js" async=""></script></body></html>
