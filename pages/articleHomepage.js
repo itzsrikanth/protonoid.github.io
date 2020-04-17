@@ -3,6 +3,7 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 
 import Layout from '../components/layout';
+import '../../styles/pages/articleHomepage';
 
 class Articles extends React.Component {
 
@@ -56,12 +57,13 @@ class Articles extends React.Component {
         });
         for (i = 0; i < categories.length; i++) {
             links.push(
-                <li className="col-md-3" key={i}>
-                    <div>
-                        <Link href={`/blogs/articles${categories[i].location}`}>
-                            <a>{categories[i].markdown.attributes.title}</a>
-                        </Link>
-                    </div>
+                <li className="col-md-3 article-card" key={i}>
+                    <Link href={`/blogs/articles${categories[i].location}`}>
+                        <a>
+                            <img src="/static/images/snake.jpg" />
+                            <span>{categories[i].markdown.attributes.title}</span>
+                        </a>
+                    </Link>
                 </li>
             );
         }

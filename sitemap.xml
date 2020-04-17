@@ -110,7 +110,7 @@
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/</loc>
-        <lastmod>2020-01-07</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -194,7 +194,7 @@
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/frontend/css-layout/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -260,43 +260,49 @@
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/video-games/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/video-games/ps4/co-op/best-game-titles/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/video-games/ps4/co-op/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/video-games/ps4/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/web/concepts/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/web/concepts/scripts/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://www.protonoid.com/blogs/articles/web/</loc>
-        <lastmod>2020-04-01</lastmod>
+        <lastmod>2020-04-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.protonoid.com/blogs/articles/frontend/css-layout/recipes/</loc>
+        <lastmod>2020-04-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>

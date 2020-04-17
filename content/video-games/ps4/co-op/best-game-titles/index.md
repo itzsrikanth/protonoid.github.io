@@ -1,5 +1,6 @@
 ---
 title: Best PS4 Co-op Game titles
+metaImage: video games
 ---
 
 # Best PS4 Co-op Game titles

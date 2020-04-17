@@ -14,12 +14,12 @@ class Article extends React.Component {
         const { body, attributes } = this.props.router.query;
         const layoutBody = (
             <>
-                <div dangerouslySetInnerHTML={{ __html: body }}></div>
+                <div id="proto-container" dangerouslySetInnerHTML={{ __html: body }}></div>
             </>
         );
         return (
             <Layout attrib={attributes} body={layoutBody}></Layout>
-        )
+        );
     }
 }
 

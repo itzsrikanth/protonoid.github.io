@@ -1,5 +1,8 @@
 ---
 title: scripts
+metaImage:
+- coding
+- developer
 ---
 
 # Script Cookbook recipes

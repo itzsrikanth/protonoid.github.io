@@ -1,9 +1,9 @@
-@import '../../variables.scss';
+@import '../../styles/variables.scss';
 
 nav {
-    background-color: $primary;
+    background-color: var(--primary-color);
     min-height: 3rem;
     a {
-        color: $accentLinkColor;
+        color: var(--secondar-color);
     }
 }

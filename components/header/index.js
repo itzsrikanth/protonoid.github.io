@@ -10,12 +10,12 @@ class Header extends React.Component {
         const metaData = [];
         if (this.props.attrib.title) {
             metaData.push(
-                <title>{this.props.attrib.title}</title>
+                <title key={'title'}>{this.props.attrib.title}</title>
             );
         }
         if (this.props.attrib.description) {
             metaData.push(
-                <meta name="description" content={this.props.attrib.description} />
+                <meta key={'description'} name="description" content={this.props.attrib.description} />
             );
         }
         return (
