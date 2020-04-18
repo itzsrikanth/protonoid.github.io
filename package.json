@@ -8,22 +8,23 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "express": "^4.17.1",
-    "next": "^9.1.6",
-    "node-sass": "^4.12.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "front-matter": "^3.1.0",
+    "marked": "^0.7.0",
+    "memory-fs": "^0.5.0",
+    "next": "^9.3.5",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "walk": "^2.3.14",
-    "xml-formatter": "^1.2.0",
+    "xml-formatter": "^1.2.1",
     "xml2json": "^0.11.2"
   },
   "license": "ISC",
   "devDependencies": {
-    "front-matter": "^3.0.2",
     "husky": "^3.1.0",
-    "marked": "^0.7.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.3"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #1f1f1f;
+  --secondary-color: white; }
+
+nav {
+  background-color: var(--primary-color);
+  min-height: 3rem; }
+  nav a {
+    color: var(--secondar-color); }
+

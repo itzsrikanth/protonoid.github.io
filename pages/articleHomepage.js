@@ -2,8 +2,8 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 
-import Layout from '../components/layout';
-import '../../styles/pages/articleHomepage';
+import Layout from './components/layout';
+import './styles/pages/articleHomepage.scss';
 
 class Articles extends React.Component {
 
@@ -57,11 +57,11 @@ class Articles extends React.Component {
         });
         for (i = 0; i < categories.length; i++) {
             links.push(
-                <li className="col-md-3 article-card" key={i}>
+                <li className="col-12 col-sm-6 col-md-4 col-lg-3" key={i}>
                     <Link href={`/blogs/articles${categories[i].location}`}>
-                        <a>
-                            <img src="/static/images/snake.jpg" />
-                            <span>{categories[i].markdown.attributes.title}</span>
+                        <a className="article-card">
+                            <img className="article-card__cover" src="/static/images/content/web/small.png" />
+                            <span className="article-card__title px-3 py-2">{categories[i].markdown.attributes.title}</span>
                         </a>
                     </Link>
                 </li>
@@ -75,7 +75,7 @@ class Articles extends React.Component {
         const body = (
             <>
                 {firstFold}
-                <ul className="row">
+                <ul className="row article-list">
                     {links}
                 </ul>
             </>

@@ -118,12 +118,12 @@ module.exports = (async function main() {
             location,
             markdown: md
           });
-          getUnsplashImageInfo(imgPath, md.attributes.metaImage, 'small').then(() => {
+          // getUnsplashImageInfo(imgPath, md.attributes.metaImage, 'small').then(() => {
             next();
-          }, e => {
-            console.error(e);
-            process.exit(1);
-          });
+          // }, e => {
+          //   console.error(e);
+          //   process.exit(1);
+          // });
         }
       });
     });

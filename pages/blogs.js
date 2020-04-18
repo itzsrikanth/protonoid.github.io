@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 
-import Layout from '../components/layout';
+import Layout from './components/layout';
 
 class Blogs extends React.Component {
     render() {

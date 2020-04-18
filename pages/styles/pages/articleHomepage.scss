@@ -1,0 +1,33 @@
+@import '../global.scss';
+
+.article-card {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition-property: box-shadow;
+    transition: .2s ease-in;
+    &:hover {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        cursor: pointer;
+    }
+}
+.article-card__cover {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.article-card__title {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    min-height: 30%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-transform: capitalize;
+}

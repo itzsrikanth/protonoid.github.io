@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'next/router';
 
-import Layout from '../components/layout';
+import Layout from './components/layout';
 
 class App extends React.Component {
     render() {
