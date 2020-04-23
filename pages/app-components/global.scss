@@ -1,0 +1,17 @@
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './variables.scss';
+
+html,
+body,
+#root,
+#__next {
+    font-size: 1em;
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}

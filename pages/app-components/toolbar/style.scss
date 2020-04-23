@@ -1,0 +1,43 @@
+.toolbar {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition-property: box-shadow;
+    transition: .15s ease-in;
+    flex-shrink: 0;
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+}
+/*
+ * https://stackoverflow.com/a/35678354
+ */
+.toolbar__button-group {
+    border-style: solid;
+    border-color: rgba(55,55,55,0.25);
+    border-width: 1px 0 0 1px;
+    --menu-button-border-radius: .3rem;
+    border-radius: var(--menu-button-border-radius);
+}
+.toolbar__button-holder {
+    border-style: inherit;
+    border-color: inherit;
+    border-width: 0 1px 1px 0;
+    cursor: pointer;
+    background-color: rgba(0, 200, 0, 0.1);
+    transition-property: background-color;
+    transition: .2s ease-in;
+    &--left {
+        @extend .toolbar__button-holder;
+        border-top-left-radius: var(--menu-button-border-radius);
+        border-bottom-left-radius: var(--menu-button-border-radius);
+    }
+    &--right {
+        @extend .toolbar__button-holder;
+        border-top-right-radius: var(--menu-button-border-radius);
+        border-bottom-right-radius: var(--menu-button-border-radius);
+    }
+    &[data-disabled] {
+        background-color: initial;
+    }
+}

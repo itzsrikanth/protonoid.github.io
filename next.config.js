@@ -10,6 +10,9 @@ module.exports = withSass({
         page: '/articleHomepage',
         query: fileList
       },
+      '/online': {
+        page: '/online'
+      },
       ...fileList.reduce(
         require('./utils/dynamicMapGenerator'), {}
       )
